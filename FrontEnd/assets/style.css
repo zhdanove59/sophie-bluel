@@ -22,6 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	text-decoration: none;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -95,7 +96,34 @@ nav li {
 	padding: 0 10px;
 	font-size: 1.2em;
 }
-
+.boutons{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 30px;
+	gap: 20px;
+}
+.btn{
+	font-family: 'Syne', sans-serif;
+	background: transparent;
+	font-size: 16px;
+	padding: 10px;
+	color: #1D6154;
+	border-radius: 20px;
+	border:1px solid #1D6154;
+}
+.btn:hover{
+	background-color: #1D6154;
+	color: white;
+}
+.btn-a:hover{
+	color: white;
+}
+.btn-a{ 
+	color:#1D6154 ;
+	text-decoration: none;
+}
 li:hover {
 	color: #B1663C;
 }
