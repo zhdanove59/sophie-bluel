@@ -5,3 +5,8 @@ async function getWorks() {
     const resultJson = await result.json();
 return resultJson;
 }
+async function getCategories() {
+    const result = await fetch(`${baseUrl}/categories`);
+    const resultJson = await result.json();
+return resultJson;
+}
