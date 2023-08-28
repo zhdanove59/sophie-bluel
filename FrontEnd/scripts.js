@@ -19,6 +19,7 @@ function displayCategories(categories){
   const boutonsSurHtml = document.querySelector('.boutons');
   boutonsSurHtml.innerHTML=''
   let render=""
+  categories.unshift({name:"Tous"}) //unshit pour rajouter un element au debut array 
   categories.forEach(categorie => {
     console.log("categorie=",categorie)
     render +=`
@@ -35,5 +36,6 @@ async function init(){
   const categories=await getCategories();
   displayCategories(categories)
 }
+
 
 init()
