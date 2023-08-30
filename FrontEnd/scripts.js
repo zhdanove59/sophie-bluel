@@ -18,8 +18,11 @@ function displayCategories(categories){
   console.log(categories)
   const boutonsSurHtml = document.querySelector('.boutons');
   boutonsSurHtml.innerHTML=''
-  let render=""
-  categories.unshift({name:"Tous"}) //unshit pour rajouter un element au debut array 
+  let render=`<div class="btn" >
+  <a class="btn-a" href="#">Tous</a> 
+</div>`
+//rajouter un object
+  //categories.unshift({name:"Tous"}) //unshit pour rajouter un element au debut array 
   categories.forEach(categorie => {
     console.log("categorie=",categorie)
     render +=`
@@ -30,6 +33,15 @@ function displayCategories(categories){
   })
   boutonsSurHtml.innerHTML = render
 }
+function getLogin(login){
+console.log(login)
+const contactSurhtml =document.querySelector('#contact');
+contactSurhtml.innerHTML=''
+let render =""
+
+
+}
+
 async function init(){
   const works=await  getWorks();
   displayWorks(works)
