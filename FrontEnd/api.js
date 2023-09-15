@@ -28,3 +28,4 @@ async function getLogin(user){
     let result = await response.json();
     alert(result.message);
   }
+  

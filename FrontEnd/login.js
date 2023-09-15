@@ -10,8 +10,5 @@ async function init(){
     
 
    })
-    
   }
-  
-  
   init()
