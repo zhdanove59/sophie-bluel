@@ -7,7 +7,7 @@ async function init(){
     console.log(emailChamp)
     const passBtn = document.querySelector('#pass').value;
     console.log(passBtn)
-    
+     
 
    })
   }
