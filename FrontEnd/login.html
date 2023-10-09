@@ -11,40 +11,38 @@
 	<link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-<header>
-	<h1>Sophie Bluel <span>Architecte d'inteérieur</span></h1>
-	<nav>
-		<ul>
-			<li><a href="projets.html"></a>projets</li>
-			<li><a href="contact.html"></a>contact</li>
-			<li><a href="login.html">login</a></li>
-			<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
-		</ul>
-	</nav>
-</header>
-<main class="main-login">
-	<section id="contact">
-		<h2>Log In</h2>
-		<form action="#" method="post" id="connection">
-			<label for="email">E-mail</label>
-			<input type="email" name="email" id="email" placeholder="E-mail">
-			<label for="password">Mot de pass</label>
-            <input type="password" id="pass" placeholder="Mot de passe" name="password" minlength="8" required />
-			<input type="submit" id="submit-btn" value="Se connecter">
-		</form>
-	</section>
-</main>
-
-<footer>
-	<nav>
-		<ul>
-			<li>Mentions Légales</li>
-		</ul>
-	</nav>
-</footer>
-<script src="api.js"></script>
-<script src="login.js"></script>
-<script src="scripts.js"></script>
-<script src="teste.js"></script>
+    <header>
+        <h1>Sophie Bluel <span>Architecte d'intérieur</span></h1>
+        <nav>
+            <ul>
+                <li><a class="a_login" href="index.html">Projets</a></li>
+                <li><a class="a_login" href="index.html#contact">contact</a></li>
+                <li><a class="a_login" href="login.html">login</a></li>
+                <li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contact">
+            <h2>Log In</h2>
+            <form class="form_login" action="#" method="post">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <label for="mdp">Mot de passe</label>
+                <input type="password" name="mdp" id="mdp">
+                <input id="seconnecter" type="submit" value="Se connecter">
+                <p>Mot de passe oublié</p>
+            </form>
+        </section>
+    </main>
+    <footer class="footer_login">
+        <nav>
+            <ul>
+                <li>Mentions Légales</li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="./scripts/route.js"></script>
+    <script src="./scripts/login.js"></script>
 </body>
 </html>

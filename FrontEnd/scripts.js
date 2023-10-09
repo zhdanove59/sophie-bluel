@@ -38,7 +38,6 @@ console.log(login)
 const contactSurhtml =document.querySelector('#contact');
 contactSurhtml.innerHTML=''
 let render =""
-fetch(baseUrl).then(Response=>Response.json().then (data=> console.log(data)) );
 
 }
 async function init(){

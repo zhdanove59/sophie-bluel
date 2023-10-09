@@ -12,11 +12,6 @@ return resultJson;
 }
 async function getLogin(user){
     console.log(user)
-    //let user = {
-      //email: 'string',
-      //password: 'string'
-    //};
-    
     let response = await fetch(`${baseUrl}/users/login`, {
       method: 'POST',
       headers: {
